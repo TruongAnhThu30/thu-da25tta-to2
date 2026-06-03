@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Thiết kế trang giới thiệu thông tin sản phẩm</title>
+		<meta charset="utf-8">
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+		<div class = "container bg-info">
+			<div id = "product-list" class="row">
+
+            </div>
+		</div>
+        <script>
+            const listProducts = document.getElementById("product-list");
+
+            const item = document.createElement("div");
+            item.setAttribute("class", "item col card");
+            //tạo 2khung 
+            //tạo 1 container chứa ảnh
+            const containerImage = document.createElement("div");
+            containerImage.setAttribute("class", "image card-img-top");
+            //tạo ảnh
+            const img = document.createElement("img");
+            img.setAttribute("src","../assets/images/chotrang.jpg");
+            img.setAttribute("alt","con chó");
+            img.setAttribute("style","width:30%");
+            img.setAttribute("class","card-img-top");
+            //đưa vào khung
+            containerImage.appendChild(img);
+            //tạo 1 khung chứa thông tin
+            const containerInfo = document.createElement("div");
+            containerInfo.setAttribute("class", "info");
+            //tạo p
+            const nameProduct = document.createElement("h2");
+            nameProduct.innerHTML = "GIỐNG CHÓ CUTE";
+            nameProduct.setAttribute("class","card-title");
+            const price = document.createElement("p");
+            price.innerHTML = "3.000.000/1 con";
+
+            const description = document.createElement("p");
+
+            description.innerHTML = `
+            Chó phốc sóc (hay chó Pomeranian) là một giống chó siêu dễ thương có nguồn gốc từ Đức.<br>
+            Pom đã là giống chó quý tộc ngay từ khi sơ khai, ngoan ngoãn, biết nghe lời và không quậy phá.`;
+            //tạo a chứa liên kết
+            const linkProduct = document.createElement("a");
+            linkProduct.innerHTML = "Xem chi tiết";
+            linkProduct.setAttribute("href", "page6.html");
+            linkProduct.setAttribute("class"," btn btn-info")
+            //gắn 4 con vào khung
+            containerInfo.appendChild(nameProduct);
+            containerInfo.appendChild(price);
+            containerInfo.appendChild(description);
+            containerInfo.appendChild(linkProduct);
+
+            item.appendChild(containerImage);
+            item.appendChild(containerInfo);
+
+            listProducts.appendChild(item);
+        
+  
+        </script>
+	</body>
+</html>
