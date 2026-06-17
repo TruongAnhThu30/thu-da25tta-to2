@@ -11,7 +11,7 @@ body{
     background: #ffffff;
     padding: 30px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-    transiion: 0.4s;
+    transition: 0.4s;
 }
 .card:hover{
     transform: translateY(-6px);
@@ -20,20 +20,30 @@ body{
 }
 #image{
     width: 100%;
-    max-width: 450px;
-    height: 350px;
+    max-width: 700px;
+    height: 300px;
     object-fit: cover;
     display: block;
     margin: auto;
     border-radius: 20px;
-    border: 5px solid #7fffd4; /* xanh trong */
+    border: 5px solid #7fffd4; 
     transition: 0.4s;
     box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    
 }
+#image-box {
+    width: 95%;         
+    max-width: 1200px;   
+    height: 550px;       
+    margin: 20px auto;
 
+    border-radius: 20px;
+     
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
 #image:hover{
     transform: scale(1.03);
-    border-color: #ff9ecb; /* hồng */
+    border-color: #ff9ecb; 
 }
 
 #nameProduct{
@@ -45,11 +55,11 @@ body{
 
     font-weight: bold;
 
-    color: #ff5fa2; /* hồng */
+    color: #ff5fa2; 
 }
 #price{
     text-align: center;
-    color: #2bbbad; /* xanh trong */
+    color: #2bbbad; 
     font-size: 28px;
     font-weight: bold;
     margin-top: 15px;
@@ -64,18 +74,18 @@ body{
 }
 .back-btn{
     display: inline-block;
-    margin-top: 25px;
-    padding: 12px 28px;
-    border-radius: 30px;
+    margin-top: 10px;
+    padding: 6px 12px;   
+    font-size: 14px;     
     text-decoration: none;
     background: linear-gradient(135deg, #7fffd4, #ff9ecb);
     color: white;
     font-weight: bold;
+    border-radius: 15px;
     transition: 0.3s;
+    width: 150px;
 }
 .back-btn:hover{
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-
-

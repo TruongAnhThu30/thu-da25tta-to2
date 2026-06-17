@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255,255,255,0.25);
+    z-index: -1;
+}
+
+h2 {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card {
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    width: 100%;
+    border-radius: 10px;
+}

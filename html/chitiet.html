@@ -16,6 +16,7 @@
             <h2 id="nameProduct"></h2>
             <h4 id="price" class="text-primary"></h4>
             <p id="description"></p>
+          <a href="page8.html" class="back-btn">Quay về thui!!</a>
         </div>
     </div>
     <script>
@@ -26,7 +27,12 @@
             document.getElementById("image").src = product.image;
             document.getElementById("nameProduct").innerHTML = product.nameProduct;
             document.getElementById("price").innerHTML = product.price;
-            document.getElementById("description").innerHTML = product.description;
+           document.getElementById("description").innerHTML = `
+            ${product.description}
+            <hr>
+            <h5>📌 Thông tin chi tiết:</h5>
+            <p>${product.detail}</p>
+`;
         }
     </script>
 </body>
